@@ -47,7 +47,7 @@ namespace AzureExtensions
 
             // Do we have an encoding guess?  If not, use default.
             if (encoding == null)
-                encoding = Encoding.Default;
+                encoding = Encoding.UTF8;
 
             // Calculate BOM length based on encoding guess.  Then check for it in the data.
             if (bomLengthInData == -1)
